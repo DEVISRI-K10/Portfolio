@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-4 text-center">
+    <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile" class="rounded-circle img-fluid" style="max-width:200px;">
+  </div>
+  <div class="col-md-8">
+    <h1>Hi, I'm DEVISRI K</h1>
+    <h3> Python Developer</h3>
+    <p class="lead">
+      Passionate about clean code, open-source, and building things that matter.
+    </p>
+
+    <h5>Quick Facts</h5>
+    <ul>
+      <li>📍 INDIA</li>
+      <li>💼Graduate with skills like python, sql, c++</li>
+      <li>🌐 Speaks English, Telugu, Kannada</li>
+      <li>🔗 <a href="https://github.com/DEVISRI-K10" target="_blank">GitHub</a> |
+          <a href="https://linkedin.com/in/Devisri K" target="_blank">LinkedIn</a></li>
+    </ul>
+
+    <a href="{{ url_for('contact') }}" class="btn btn-primary">Get in Touch</a>
+  </div>
+</div>
+{% endblock %}

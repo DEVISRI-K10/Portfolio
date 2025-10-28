@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">My Projects</h1>
+
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Project Alpha</h5>
+        <p class="card-text">A Flask + React dashboard for data visualisation.</p>
+        <a href="#" class="btn btn-sm btn-outline-primary">View Code</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Project Beta</h5>
+        <p class="card-text">CLI tool for automating AWS deployments.</p>
+        <a href="#" class="btn btn-sm btn-outline-primary">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
